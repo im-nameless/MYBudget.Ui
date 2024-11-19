@@ -1,0 +1,30 @@
+<div class="card p-4 bg-primary h-100 text-primary" style="width: 550px;" *ngIf="this.display">
+  <fa-icon style="font-size: 20px" [icon]="['fas', 'angle-left']"
+           class="mb-3 c-pointer" (click)="returnToLogin()"></fa-icon>
+  <div class="card-body pt-0">
+    <div class="register-container">
+      <h2>
+        Cadastrar
+      </h2>
+      <form (submit)="register()">
+        <div class="form-group mt-3">
+          <label for="username">Nome de usuário: </label>
+          <input type="text" class="form-control" [(ngModel)]="this.username" name="username" required [ngModelOptions]="{standalone: true}">
+        </div>
+        <div class="form-group mt-3">
+          <label for="email">Email:</label>
+          <input type="email" class="form-control" [(ngModel)]="this.email" name="email" required [ngModelOptions]="{standalone: true}">
+        </div>
+        <div class="form-group mt-3">
+          <label for="password">Senha:</label>
+          <input type="password" class="form-control" [(ngModel)]="this.password" name="password" required [ngModelOptions]="{standalone: true}">
+        </div>
+        <div class="form-group mt-3">
+          <label for="confirm-password">Confirme a senha:</label>
+          <input type="password" class="form-control" id="confirm-password" name="confirm-password" required>
+        </div>
+        <button type="submit" class="w-100 btn btn-warning btn-block mt-3 fw-bold">Cadastrar</button>
+      </form>
+    </div>
+  </div>
+</div>
