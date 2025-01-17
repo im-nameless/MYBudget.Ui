@@ -8,20 +8,28 @@
       </h2>
       <form (submit)="register()">
         <div class="form-group mt-3">
-          <label for="username">Nome de usuário: </label>
+          <label for="username">Nome de usuário </label>
           <input type="text" class="form-control" [(ngModel)]="this.username" name="username" required [ngModelOptions]="{standalone: true}">
         </div>
         <div class="form-group mt-3">
-          <label for="email">Email:</label>
+          <label for="email">Email</label>
           <input type="email" class="form-control" [(ngModel)]="this.email" name="email" required [ngModelOptions]="{standalone: true}">
         </div>
         <div class="form-group mt-3">
-          <label for="password">Senha:</label>
+          <label for="password">Senha</label>
           <input type="password" class="form-control" [(ngModel)]="this.password" name="password" required [ngModelOptions]="{standalone: true}">
         </div>
         <div class="form-group mt-3">
-          <label for="confirm-password">Confirme a senha:</label>
+          <label for="confirm-password">Confirme a senha</label>
           <input type="password" class="form-control" id="confirm-password" name="confirm-password" required>
+        </div>
+        <div class="form-group mt-3">
+          <label for="confirm-password">Data de nascimento</label>
+          <input type="date" class="form-control" [(ngModel)]="this.birthDate" name="birthDate" required [ngModelOptions]="{standalone: true}">
+        </div>
+        <div class="form-group mt-3">
+          <label for="confirm-password">Telefone</label>
+          <input type="text" class="form-control" [(ngModel)]="this.phone" name="phone" [mask]="'(00) 00000-0000'">
         </div>
         <button type="submit" class="w-100 btn btn-warning btn-block mt-3 fw-bold">Cadastrar</button>
       </form>

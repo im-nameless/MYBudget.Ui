@@ -4,6 +4,21 @@
 @import 'bootstrap/scss/bootstrap';
 @import 'assets/scss/themes.scss';
 
+.text-primary {
+  color: $dark-50 !important;
+  font-family: 'Roboto', sans-serif !important;
+}
+
+.text-light {
+  color: $white-50 !important;
+  font-family: 'Roboto', sans-serif !important;
+}
+
+.text-yellow {
+  color: $warning !important;
+  font-family: 'Roboto', sans-serif !important;
+}
+
 .c-pointer{
   cursor: pointer;
 }
@@ -107,11 +122,6 @@
 }
 
 /* End of buttons. */
-
-.text-primary {
-  color: $dark-50 !important;
-  font-family: "Gill Sans", sans-serif !important;
-}
 
 .bg-primary {
   background-color: $white-50 !important;

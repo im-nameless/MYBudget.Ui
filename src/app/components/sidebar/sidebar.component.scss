@@ -1,0 +1,64 @@
+li{
+    cursor: pointer;
+}
+
+/* Sidebar styles */
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -250px;  /* Start hidden (off-screen) */
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    color: #fff;
+    transition: left 0.3s ease;  /* Smooth transition */
+    z-index: 1000;  /* Make sure it's on top of other content */
+  }
+  
+  .sidebar-open {
+    right: 0;  /* Slide in from the left */
+  }
+  
+  .sidebar-content {
+    padding: 20px;
+  }
+  
+  .sidebar-content ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sidebar-content ul li {
+    padding: 15px 0;
+    border-bottom: 1px solid #444;
+  }
+  
+  .sidebar-content ul li:hover {
+    background-color: #575757;
+  }
+  
+  /* Content area */
+  .content-area {
+    margin-left: 0;
+    transition: margin-left 0.3s ease;  /* Adjust content position */
+  }
+  
+  /* Adjust content when sidebar is open */
+  .sidebar-open ~ .content-area {
+    margin-left: 250px;  /* Shift content to the right when sidebar is open */
+  }
+
+  /* Optional: Styling for the sidebar toggle button */
+  button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }

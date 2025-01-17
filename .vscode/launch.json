@@ -8,7 +8,7 @@
       "url": "http://localhost:4200",
       "webRoot": "${workspaceFolder}/src",
       "preLaunchTask": "npm: start",
-      "runtimeExecutable": "C:\\Users\\Giova\\AppData\\Local\\Programs\\Opera GX\\opera.exe"
+      "runtimeExecutable": "C:\\Users\\Giovanni\\AppData\\Local\\Programs\\Opera GX\\opera.exe"
     }
   ]
 }

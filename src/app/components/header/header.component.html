@@ -1,0 +1,20 @@
+<div class="header-container shadow-bottom d-flex justify-content-between align-items-center px-4 mt-3"> 
+    <!-- Logo section -->
+    <img class="ml-2 c-pointer" src="../../../assets/images/M__1_-removebg-preview.png" alt="" height="50px" (click)="home()">
+
+    <!-- Menu items section -->
+    <div class="d-md-flex d-none text-light justify-content-center flex-grow-1">
+        <div class="header-items py-1 c-pointer" [ngClass]="{'active': activeButton === 'home'}" (click)="setActiveButton('home')">
+            <span class="mx-5">Início</span>
+        </div>
+        <div class="header-items py-1 c-pointer" [ngClass]="{'active': activeButton === 'receitas'}" (click)="setActiveButton('receitas')">
+            <span class="mx-5">Receitas</span>
+        </div>
+        <div class="header-items py-1 c-pointer" [ngClass]="{'active': activeButton === 'despesas'}" (click)="setActiveButton('despesas')">
+            <span class="mx-5">Despesas</span>
+        </div>
+    </div>   
+
+    <span class="d-md-block d-none text-light c-pointer logout"><fa-icon [icon]="['fas', 'right-from-bracket']"></fa-icon></span>
+    <span class="d-md-none text-light d-block c-pointer"><fa-icon class=" header-items" [icon]="['fas', 'bars']"></fa-icon></span>
+</div>
