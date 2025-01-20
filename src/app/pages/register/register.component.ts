@@ -6,8 +6,6 @@ import { HttpService } from 'src/app/services/http.service';
 import Swal from 'sweetalert2';
 import { NgxMaskModule } from 'ngx-mask';
 
-
-
 @Component({
   selector: 'app-register',
   standalone: true,

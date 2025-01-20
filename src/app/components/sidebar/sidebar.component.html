@@ -1,4 +1,8 @@
-<div class="sidebar sidebar-open">
+<div class="sidebar sidebar-open" *ngIf="this.displaySideBar">
+    <div class="p-3">
+      <fa-icon (click)="this.closeSideBar()" class="c-pointer" [icon]="['fas', 'bars']"></fa-icon>
+    </div>
+
     <div class="sidebar-content">
         <ul>
             <li class="px-2"><fa-icon [icon]="['fas', 'house']"></fa-icon>  Início</li>

@@ -4,6 +4,12 @@
 @import 'bootstrap/scss/bootstrap';
 @import 'assets/scss/themes.scss';
 
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
 .text-primary {
   color: $dark-50 !important;
   font-family: 'Roboto', sans-serif !important;
